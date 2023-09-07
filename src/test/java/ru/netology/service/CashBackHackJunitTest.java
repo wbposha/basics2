@@ -1,10 +1,10 @@
 package ru.netology.service;
 
-import org.junit.Test;
-import org.junit.Assert;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
-public class CashBackHackJunitTest {
-    @Test
+public class CashBackHackTestNg {
+    @org.junit.Test
     public void shouldCalculateIfAmountLessThan1000 () {
 
         CashBackHackService cashBackHackService = new CashBackHackService();
@@ -16,7 +16,7 @@ public class CashBackHackJunitTest {
         Assert.assertEquals(actual, expected);
     }
 
-    @Test
+    @org.junit.Test
     public void shouldCalculateIfAmountMoreThan1000 () {
 
         CashBackHackService cashBackHackService = new CashBackHackService();
@@ -28,7 +28,7 @@ public class CashBackHackJunitTest {
         Assert.assertEquals(actual, expected);
     }
 
-    @Test
+    @org.junit.Test
     public void shouldCalculateIfAmountEqual1000 () {
 
         CashBackHackService cashBackHackService = new CashBackHackService();
@@ -40,7 +40,7 @@ public class CashBackHackJunitTest {
         Assert.assertEquals(actual, expected);
     }
 
-    @Test
+    @org.junit.Test
     public void shouldCalculateIfAmountMoreThan5000 () {
 
         CashBackHackService cashBackHackService = new CashBackHackService();
@@ -52,7 +52,7 @@ public class CashBackHackJunitTest {
         Assert.assertEquals(actual, expected);
     }
 
-    @Test
+    @org.junit.Test
     public void shouldCalculateIfAmountEqual0 () {
 
         CashBackHackService cashBackHackService = new CashBackHackService();
@@ -64,7 +64,7 @@ public class CashBackHackJunitTest {
         Assert.assertEquals(actual, expected);
     }
 
-    @Test
+    @org.junit.Test
     public void shouldCalculateIfAmountLessThan0 () {
 
         CashBackHackService cashBackHackService = new CashBackHackService();
@@ -76,5 +76,4 @@ public class CashBackHackJunitTest {
         Assert.assertEquals(actual, expected);
     }
 
-}
 }
